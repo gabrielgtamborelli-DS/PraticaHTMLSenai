@@ -1,0 +1,122 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: solid black;
+}
+
+body {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo {
+ position: fixed;
+ top: 0;
+ width: 50%;
+ height: 100%;
+ z-index: -1;
+ background-position: 100;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.fundo-esquerda{
+    left: 0;
+    background-image:url(./imgs/criancas.png);
+}
+
+.fundo-direita{
+    right: 0;
+    background-image:url(./imgs/menina.png);
+
+}
+
+.login{
+    width: 500px;
+    max-width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-color: #fff;
+}
+
+.login h1{
+    font-size: 17.5px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.logo{
+    display: block;
+    height: 165px;
+    width: 320px;
+    max-width: 100%;
+
+    margin: 4px auto 36px;
+}
+
+.login h2{
+    font-size: 17.5px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+
+}
+
+input[type = "text"],
+input[type = "password"]{
+  display: block;
+
+  width: 320 px;
+  padding: 14 px 12 px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  
+  color: #333333;
+  background-color: rgb(255 255 255);
+}
+
+input[type = "text"]:focus,
+input[type = "password"]:focus{
+    outline: none;
+    border-color: #4aa3e8;
+}
+
+button{
+    padding: 12px 12px;
+    margin-bottom: 20 px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+
+    background-color: #d73220;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gray;
+}
